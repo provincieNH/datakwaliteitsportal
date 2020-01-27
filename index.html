@@ -53,10 +53,9 @@ article {
 }
 
 /* Style the footer */
-footer {
-  background-color: #777;
+[id="console"] {
+  background-color: #00ccff;
   padding: 10px;
-  text-align: center;
   color: white;
 }
 
@@ -75,9 +74,9 @@ footer {
 <h1>Portaal</h1>
 
 <article><form name="myForm">Select a file: <input id="myFile" type="file">
-<input type="submit" id="submit" onSubmit="return validateForm()"><input type="button" value="DUMMY" onclick="return dummyClick()"><br><br>
-<textarea id="console" rows="10" style="width:95%">
-</textarea></form></article>
+<input type="button" id="submit" onSubmit="return validateForm()"><input type="button" value="DUMMY" onclick="return dummyClick()"><br><br>
+<div id="console" style="width:95%; height:160px">
+</div></form></article>
 
 </body>
 </html>
