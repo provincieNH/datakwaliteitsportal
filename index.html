@@ -4,79 +4,24 @@
 <title>Portaal</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Style the header */
-header, h1 {
-  background-color: #666;
-  padding: 30px;
-  text-align: center;
-  font-size: 35px;
-  color: white;
-}
-
-/* Container for flexboxes */
-section {
-  display: -webkit-flex;
-  display: flex;
-}
-
-/* Style the navigation menu */
-nav {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  background: #ccc;
-  padding: 20px;
-}
-
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-/* Style the content */
-article {
-  -webkit-flex: 3;
-  -ms-flex: 3;
-  flex: 3;
-  background-color: #f1f1f1;
-  padding: 10px;
-}
-
-/* Style the console */
-[id="console"] {
-  background-color: #00ccff;
-  padding: 10px;
-  color: white;
-}
-
-/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
-@media (max-width: 600px) {
-  section {
-    -webkit-flex-direction: column;
-    flex-direction: column;
-  }
-}
-</style>
+<link rel="stylesheet" type="text/css" href="style.css">
 <script src="portaal.js">
 </script>
 </head>
 <body>
 <h1>Portaal</h1>
 
-<article><form name="myForm">Select a file: <input id="myFile" type="file">
-<input type="button" id="submit" onClick="return validateForm()"value="Verzenden"><input type="button" value="DUMMY" onclick="return dummyClick()"><br><br>
-<textarea id="console" style="max-width:95%; min-width:95%" rows="10" disabled>
-</textarea></form></article>
+<article>
+    <form name="myForm">
+        <!--To-do: Controleer of het file deel van de form op de een of andere manier gestyled kan worden-->
+        <div>
+            <input id="myFile" type="file" accept=".zip"><input type="button" id="submit" onClick="return validateForm()"value="Verzenden"><input type="button" value="DUMMY" onclick="return dummyClick()">
+        </div><br>
+        <div>
+            <textarea id="console" style="max-width:95%; min-width:95%" rows="10" disabled>Kies een bestand</textarea>
+        </div>
+    </form>
+</article>
 
 </body>
 </html>

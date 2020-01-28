@@ -5,8 +5,7 @@ function validateForm() {
     return false;
   }
   else {
-	document.getElementById("console").innerHTML = "Hello JavaScript!";
-	console.log("Hello JavaScript!");
+	document.getElementById("console").innerHTML = "Bestand gekozen.";
 	return true;
 	//to-do: Check wat BetterWetFromSweat doet!
   }
