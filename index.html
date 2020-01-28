@@ -52,7 +52,7 @@ article {
   padding: 10px;
 }
 
-/* Style the footer */
+/* Style the console */
 [id="console"] {
   background-color: #00ccff;
   padding: 10px;
@@ -74,9 +74,9 @@ article {
 <h1>Portaal</h1>
 
 <article><form name="myForm">Select a file: <input id="myFile" type="file">
-<input type="button" id="submit" onSubmit="return validateForm()"><input type="button" value="DUMMY" onclick="return dummyClick()"><br><br>
-<div id="console" style="width:95%; height:160px">
-</div></form></article>
+<input type="button" id="submit" onClick="return validateForm()"value="Verzenden"><input type="button" value="DUMMY" onclick="return dummyClick()"><br><br>
+<textarea id="console" style="max-width:95%; min-width:95%" rows="10" disabled>
+</textarea></form></article>
 
 </body>
 </html>
