@@ -8,8 +8,8 @@ body {
 
 /* Style the header */
 header, h1 {
-  background-color: #666;
-  padding: 30px;
+  background-color: #336699;
+  padding: 24px;/* 0px 24px 0 px;*/
   text-align: center;
   font-size: 35px;
   color: white;
@@ -50,11 +50,11 @@ article {
   padding: 10px;
 }
 
-[type="button"]
+.btn
 {
-    background-color: #66d9ff;
+    /*background-color: #66d9ff;*/
     border-radius: 4px;
-    padding: 4px;
+    /*padding: 4px;*/
 }
 
 /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */

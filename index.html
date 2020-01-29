@@ -17,19 +17,19 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-<h1>Portaal</h1>
+<div class="container-fluid"><h1>Datakwaliteitsportaal</h1></div>
 
-<article>
+<div class="container">
     <form name="myForm">
         <!--To-do: Controleer of het file deel van de form op de een of andere manier gestyled kan worden-->
         <div>
-            <input id="myFile" type="file" accept=".zip"><input type="button" id="submit" onClick="return validateForm()"value="Verzenden"><input type="button" value="DUMMY" onclick="return dummyClick()">
+            <input type="file" id="myFile" accept=".zip"><input type="button" class="btn btn-primary" id="submit" onClick="return validateForm()" value="Verzenden"><input type="button" class="btn btn-warning btn-sm" value="DUMMY" onclick="return dummyClick()">
         </div><br>
-        <div>
-            <textarea id="console" style="max-width:95%; min-width:95%" rows="10" disabled>Kies een bestand.</textarea>
+        <div class="alert alert-info" id="console">
+            <div>Kies een bestand.</div>
         </div>
     </form>
-</article>
+</div>
 
 </body>
 </html>
