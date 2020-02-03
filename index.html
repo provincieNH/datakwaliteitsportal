@@ -5,9 +5,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="style.css">
-<script src="portaal.js">
-</script>
-    <!-- Latest compiled and minified CSS -->
+<script type="text/javascript" src="lib/zip.js"></script>
+<script src="portaal.js"></script>
+<!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
 <!-- jQuery library -->
@@ -23,7 +23,8 @@
     <form name="myForm">
         <!--To-do: Controleer of het file deel van de form op de een of andere manier gestyled kan worden-->
         <div>
-            <input type="file" id="myFile" accept=".zip"><input type="button" class="btn btn-primary" id="submit" onClick="return validateForm()" value="Verzenden"><input type="button" class="btn btn-warning btn-sm" value="DUMMY" onclick="return dummyClick()">
+            <input type="file" id="myFile" accept=".zip"><input type="button" class="btn btn-primary"
+                  id="submit" onClick="return validateForm()" value="Verzenden"><input type="button" class="btn btn-warning btn-sm" value="DUMMY" onclick="return dummyClick()">
         </div><br>
         <div class="alert alert-info" id="console">
             <div>Kies een bestand.</div>
