@@ -1,6 +1,6 @@
 var consoleOutput = "Kies een bestand.\n";
 //var fileInput = document.getElementById("myFile");
-zip.workerScriptsPath = '/lib/';
+zip.workerScriptsPath = '/datakwaliteitsportal/lib/';
 
 //console.log(fileInput);
 
